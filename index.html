@@ -8,10 +8,40 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-
-        </header>
-        <main></main>
-        <footer></footer>
+        <div class="container">
+            <header class="header">
+                <div class="header-top">
+                    <img class="header-top__logo" src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy">
+                    <ul class="header-top__menu-list">
+                        <li class="header-top__menu-item"><a class="header-top__menu-link" href="catalog.html">Каталог</a></li>
+                        <li class="header-top__menu-item"><a class="header-top__menu-link" href="delivery.html">Достава и оплата</a></li>
+                        <li class="header-top__menu-item"><a class="header-top__menu-link" href="company.html">О компании</a></li>
+                    </ul>
+                    <ul class="header-top__navigation-list">
+                        <li class="header-top__navigation-item header-top__navigation-item__search">
+                            <a class="header-top__navigation-link header-top__navigation-link__search button" href="search.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+                                    <path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header-top__navigation-item"><a class="header-top__navigation-link header-top__navigation-link__login button" href="login.html">Вход</a></li>
+                        <li class="header-top__navigation-item"><a class="header-top__navigation-link header-top__navigation-link__cart button" href="cart.html">Пусто</a></li>
+                    </ul>
+                </div>
+                <p class="header-schedule">
+                    С 10 до 20, ежедневно
+                </p>
+                <a class="header-phone__link" href="tel:88124502525"> 8 812 450-25-25 </a>
+            </header>
+            <main></main>
+            <footer></footer>
+        </div>
+        <form class="header-top__search-form" method="POST" action="https://echo.htmlacademy.ru">
+            <label class="header-top__search-form__label">
+                <span class="visually-hidden">Поле поиска</span>
+                <input class="header-top__search-form__input" type="search" placeholder="Что ищем?">
+            </label>
+        </form>
     </body>
 </html>
