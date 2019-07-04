@@ -14,19 +14,19 @@
                     <img class="header-top__logo" src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy">
                     <ul class="header-top__menu-list">
                         <li class="header-top__menu-item"><a class="header-top__menu-link" href="catalog.html">Каталог</a></li>
-                        <li class="header-top__menu-item"><a class="header-top__menu-link" href="delivery.html">Достава и оплата</a></li>
-                        <li class="header-top__menu-item"><a class="header-top__menu-link" href="company.html">О компании</a></li>
+                        <li class="header-top__menu-item"><a class="header-top__menu-link" href="delivery.html">Доставка и оплата</a></li>
+                        <li class="header-top__menu-item"><a class="header-top__menu-link" href="company.html">О Компании</a></li>
                     </ul>
                     <ul class="header-top__navigation-list">
                         <li class="header-top__navigation-item header-top__navigation-item__search">
-                            <a class="header-top__navigation-link header-top__navigation-link__search button" href="search.html">
+                            <a class="header-top__navigation-link header-top__navigation-link__search" href="search.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
                                     <path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
                                 </svg>
                             </a>
                         </li>
-                        <li class="header-top__navigation-item"><a class="header-top__navigation-link header-top__navigation-link__login button" href="login.html">Вход</a></li>
-                        <li class="header-top__navigation-item"><a class="header-top__navigation-link header-top__navigation-link__cart button" href="cart.html">Пусто</a></li>
+                        <li class="header-top__navigation-item"><a class="header-top__navigation-link header-top__navigation-link__login" href="login.html">Вход</a></li>
+                        <li class="header-top__navigation-item"><a class="header-top__navigation-link header-top__navigation-link__cart" href="cart.html">Пусто</a></li>
                     </ul>
                 </div>
                 <p class="header-schedule">
@@ -34,7 +34,61 @@
                 </p>
                 <a class="header-phone__link" href="tel:88124502525"> 8 812 450-25-25 </a>
             </header>
-            <main></main>
+            <main class="main">
+                <h1 class="visually-hidden"> Глэйси - магазин мороженого</h1>
+                <section class="main-slider"> 
+                    <h2 class="visually-hidden"> Комбо-предложение</h2>
+                    <div class="main-slider__controls">
+                        <label class="main-slider__controls-label">
+                            Первый
+                            <input class="visually-hidden main-slider__controls-input main-slider__controls-input__product-1" type="radio" name="toggle" checked>
+                            <span class="main-slider__controls-input__new"></span>
+                        </label>
+                        <label class="main-slider__controls-label">
+                            Второй
+                            <input class="visually-hidden main-slider__controls-input main-slider__controls-input__product-2" type="radio" name="toggle">
+                            <span class="main-slider__controls-input__new"></span>
+                        </label>
+                        <label class="main-slider__controls-label">
+                            Третий
+                            <input class="visually-hidden main-slider__controls-input main-slider__controls-input__product-3" type="radio" name="toggle">
+                            <span class="main-slider__controls-input__new"></span>
+                        </label>
+                    </div>
+                    <ul class="main-slider__list">
+                        <li class="main-slider__item main-slider__product-1">
+                            <img class="main-slider__item-image" src="img/slide_1.png">
+                            <h3 class="main-slider__item-title">Крем-брюле и пломбир с малиновым джемом </h3> 
+                            <a class="main-slider__item-link button">Давайте оба!</a>
+                        </li>
+                        <li class="main-slider__item main-slider__product-2">
+                            <img class="main-slider__item-image" src="img/slide_2.png">
+                            <h3 class="main-slider__item-title">Шоколадный пломбир и лимонный сорбет  </h3> 
+                            <a class="main-slider__item-link button">Давайте оба!</a>
+                        </li>
+                        <li class="main-slider__item main-slider__product-3">
+                            <img class="main-slider__item-image" src="img/slide_3.png">
+                            <h3 class="main-slider__item-title">Пломбир с помадкой и клубничный щербет </h3> 
+                            <a class="main-slider__item-link button">Давайте оба!</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="main-discount">
+                    <h2 class="visually-hidden">Акции</h2>
+                    <ul class="main-discount__list">
+                        <li class="main-discount__item main-discount__item-1">
+                            <h3 class="main-discount__title">Малинка даром!</h3>
+                            <p class="main-discount__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                            <a class="main-discount__link button" href="#">Хочу варенье!</a>
+                        </li>
+                        <li class="main-discount__item main-discount__item-2">
+                            <h3 class="main-discount__title">Шоколадки даром!</h3>
+                            <p class="main-discount__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+                            <a class="main-discount__link button" href="#">Хочу шоколадки!</a>
+                        </li>
+                    </ul>
+                </section>
+            </main>
             <footer></footer>
         </div>
         <form class="header-top__search-form" method="POST" action="https://echo.htmlacademy.ru">
