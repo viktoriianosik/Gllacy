@@ -52,7 +52,8 @@ input[type="radio"].visually-hidden {
 .header-top__menu-list,
 .header-top__navigation-list,
 .main-slider__list,
-.main-discount__list {
+.main-discount__list,
+.main-catalog__list{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -254,6 +255,10 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
 }
 
+.main-discount {
+    margin-bottom: 40px;
+}
+
 .main-discount__list {
     display: flex;
     flex-wrap: wrap;
@@ -300,3 +305,75 @@ input[type="radio"].visually-hidden {
     right: 21px;
     padding: 12px 22px;
 }
+
+.main-catalog {
+    margin-bottom: 40px;
+}
+
+.main-catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-catalog__item {
+    position: relative;
+
+    width: 267px;
+    margin-right: 26px;
+}
+
+.main-catalog__item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.main-catalog__item-image {
+    position: relative;
+    width: 267px;
+    height: 267px;
+
+    padding-bottom: 8px;
+}
+
+.main-catalog__item:before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 61px;
+    height: 61px;
+
+    background: url(../img/hit.png) no-repeat 0 0;
+
+    z-index: 1;
+}
+
+.main-catalog__item-text {
+    position: absolute;
+    top: 209px;
+    left: 0;
+
+    font-size: 45px;
+    line-height: 45px;
+
+    text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+
+    margin: 0;
+}
+
+.main-catalog__item-text__size {
+    font-size: 30px;
+}
+
+.main-catalog__item-title {
+    font-size: 16px;
+    line-height: 22px;
+    
+    text-decoration: underline solid #9db1a5;
+    text-underline-position: under;
+    text-align: center;
+
+    margin: 0;
+}
+
